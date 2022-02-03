@@ -4,40 +4,22 @@
     font-family: 'Sawarabi Mincho', sans-serif;
 }
 
-.estructura{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4.47fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
+h2 {
+    text-align: center;
+    margin-top: 10px;
 }
     
-.estructura__cabecera{ 
-    background-color: #e0e0e0;
-    grid-area: 1 / 1 / 2 / 2; 
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
+.estructura__cabecera{
+    background: rgb(255,159,0);
+    background: linear-gradient(0deg, rgba(255,159,0,1) 2%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 80%); 
 }
 
 .estructura__principal{ 
     background-color: white;
-    grid-area: 2 / 1 / 3 / 2;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-evenly;
 }
 
 .estructura__pie{ 
     background-color: #ff9f00;
-    text-align: center;
-    grid-area: 3 / 1 / 4 / 2;
-}
-
-.estructura__cabecera__contenedor{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
 }
 
 .estructura__cabecera__contenedor__logo{
@@ -46,51 +28,8 @@
 }
 
 .estructura__cabecera__contenedor__texto{
-    transform: translate(-5%, 0);
     margin-top: 35px;
     margin-left: 20px;
-    font-size: 25pt;
-}
-
-.estructura__cabecera__menu{
-    background-color: #ff9f00;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    align-content: space-around;    
-}
-
-.estructura__cabecera__menu__item{
-    display: inline-block;
-    font-weight: 700;
-}
-
-.estructura__cabecera__menu__item:hover, a:hover{
-    color: black;
-    font-weight: 700;
-}
-
-.estructura__principal__sec{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-evenly;
-    width: 70%;
-    margin: auto;
-}
-
-.estructura__principal__img{
-    width: 30%;
-    max-width: 400px;
-    height: fit-content;
-}
-
-.estructura__principal__texto{
-    width: 70%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: flex-start;
 }
 
 .estructura__principal__texto__cv{
@@ -146,55 +85,17 @@ a{
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(307deg) brightness(94%) contrast(102%);
 }
 
-.estructura__pie__redes{
-    background-color: #ff9f00;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    align-content: space-around; 
-}
-
-.estructura__pie__redes__iconos{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 75px;
-    align-content: center; ;
-}
-
 .estructura__pie__redes__img{
     width: 24px;
-}
-
-.estructura__pie__redes__txt{
-    width: 100%;
 }
 
 li a{
     color: white;
 }
 
-.contenedor{
-    border: 1px solid grey;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 5%;
-    width: 75%;
-    text-align: center;
-}
-
 .estructura__principal__texto__proyectos{
     padding: 5px;
     text-align: left;
-}
-
-.contenedor__contacto{
-    text-align: left;
-    width: 50%;
-    margin: auto;
 }
 
 th{
@@ -316,6 +217,10 @@ textarea:focus{
     animation: animacionLogo 0.9s both;
 }
 
+.nav-link {
+    font-weight: 700;
+}
+
 @keyframes animacionLogo {
     0% {
         transform: scale3d(1, 1, 1);
@@ -339,7 +244,6 @@ textarea:focus{
         transform: scale3d(1, 1, 1);
     }
 }
-  
 
 .btnFlotante{
     position: fixed;
@@ -360,7 +264,7 @@ textarea:focus{
     }
     100% {
         transform: scale(1);
-    }
+    }    
 }
 
 @media only screen and (max-width: 750px) {
@@ -368,53 +272,22 @@ textarea:focus{
         display: none;
     }
 
-    .btnFlotante{
-        display: none;
+    .navMobile{
+        display: block;
+        position: absolute;
+        top: 2.5%;
+        right: 3%;
     }
 
-    .estructura__cabecera__contenedor{
-        width: 100%;
-        margin: auto;
+    .offcanvas-end{
+        width: 50%;
+    }
+
+    .btnFlotante{
+        display: none;
     }
 
     .estructura__cabecera__contenedor__logo{
         margin: auto;
     }
-
-    h2 {
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .estructura__principal__img {
-        width: 300px;
-        margin-top: 10px;
-    }
-
-    .estructura__principal__texto {
-        width: 90%;
-        text-align: left;
-    }
-
-    .estructura__principal__texto__tecnologias__img {
-        object-fit: fill;
-        transition: transform 0.5s;
-        width: 100px;
-        height: auto;
-        margin: 1em;
-    }
-
-    .textoRedes{
-        display: none;
-    }
-
-    .estructura__pie{
-        font-weight: 500;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-    }
-
 }

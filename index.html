@@ -3,50 +3,88 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
         <title>Portfolio</title>
     </head>
     <body>
-        <section class="estructura">
-            <header class="estructura__cabecera">
-                <div class="estructura__cabecera__contenedor">                
-                    <img src="imagenes/Img_Logo.png" class="estructura__cabecera__contenedor__logo" alt="Logo">
-                    <h1 class="estructura__cabecera__contenedor__texto">Samuel Mariscal</h1>     
+        <header class="estructura__cabecera">               
+            <div class="d-flex flex-column bd-highlight flex-fill">
+                <div class="bd-highlight">
+                    <div class="d-flex bd-highlight">                        
+                        <div class="flex-shrink-1 bd-highlight">
+                            <img src="imagenes/Img_Logo.png" class="estructura__cabecera__contenedor__logo" alt="Logo">                    
+                        </div>
+                        <div class="w-100 bd-highlight">
+                            <h1 class="estructura__cabecera__contenedor__texto">Samuel Mariscal</h1>     
+                        </div>
+                    </div>    
                 </div>
-                <nav>
-                    <ul class="estructura__cabecera__menu">
-                        <li class="estructura__cabecera__menu__item"><a href="index.html">Inicio</a></li>
-                        <li class="estructura__cabecera__menu__item"><a href="paginas/misdatos.html">Mis datos</a></li>
-                        <li class="estructura__cabecera__menu__item"><a href="paginas/tecnologias.html">Tecnologias</a></li>
-                        <li class="estructura__cabecera__menu__item"><a href="paginas/proyectos.html">Proyectos</a></li>
-                        <li class="estructura__cabecera__menu__item"><a href="paginas/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="estructura__principal">
-                <a href="paginas/contacto.html"><img src="imagenes/Img_btnFlotante.png" class="btnFlotante" alt="Contacto"></a>
-                <section class="estructura__principal__sec">                    
-                    <img src="imagenes/Img_SamuelMariscalInicio.jpg" class="estructura__principal__img" alt="Samuel Mariscal">
-                    <div class="estructura__principal__texto">
-                        <h2>Inicio</h2>
-                        <p>Lorem asd ipsum dolor sit amet consectetur adipisicing elit. Neque unde facilis cum atque temporibus qui nam eos reprehenderit sint, vel cumque, ad veniam nostrum magnam maxime officia! Voluptates, tenetur animi!
-                        Officia accusamus ipsa quos est possimus! Quod, laudantium earum magni quaerat recusandae quasi. Delectus eaque architecto, placeat quas nostrum sit velit, temporibus libero, praesentium quaerat debitis aliquid eveniet molestias iste?</p>
+            </div>
+            <nav class="navMobile navbar navbar-expand-md navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-evenly flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="paginas/misdatos.html">Mis datos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="paginas/tecnologias.html">Tecnologias</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="paginas/proyectos.html">Proyectos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+                                </li>                        
+                            </ul>
+                        </div>
                     </div>
-                </section>  
-            </main>
-            <footer class="estructura__pie">
-                <img src="imagenes/Img_Logo.png" class="estructura__pie__logo" alt="Logo chico">
-                <ul class="estructura__pie__redes">
-                    <li class="estructura__pie__redes__iconos"><a href="https://facebook.com" target="_blank" class="estructura__pie__redes__txt"><img src="imagenes/Img_Facebook.png" class="estructura__pie__redes__img" alt="Facebook"><span class="textoRedes">Facebook</span></a></li>
-                    <li class="estructura__pie__redes__iconos"><a href="https://linkedin.com" target="_blank" class="estructura__pie__redes__txt"><img src="imagenes/Img_LinkedIn.png" class="estructura__pie__redes__img" alt="LinkedIn"><span class="textoRedes">LinkedIn</span></a></li>
-                    <li class="estructura__pie__redes__iconos"><a href="https://github.com" target="_blank" class="estructura__pie__redes__txt"><img src="imagenes/Img_Github.png" class="estructura__pie__redes__img" alt="Git Hub"><span class="textoRedes">GitHub</span></a></li>
+                </div>
+            </nav>            
+        </header>
+        <main class="container my-5">
+            <a href="paginas/contacto.html"><img src="imagenes/Img_btnFlotante.png" class="btnFlotante" alt="Contacto"></a>
+            <section class="row">                    
+                <img src="imagenes/Img_SamuelMariscalInicio.jpg" class="img-fluid mx-auto my-auto col-12 col-md-5 col-lg-4" alt="Samuel Mariscal">
+                <div class="mx-auto col-12 col-md-7 col-lg-8">
+                    <h2>Inicio</h2>
+                    <p>Lorem asd ipsum dolor sit amet consectetur adipisicing elit. Neque unde facilis cum atque temporibus qui nam eos reprehenderit sint, vel cumque, ad veniam nostrum magnam maxime officia! Voluptates, tenetur animi!
+                    Officia accusamus ipsa quos est possimus! Quod, laudantium earum magni quaerat recusandae quasi. Delectus eaque architecto, placeat quas nostrum sit velit, temporibus libero, praesentium quaerat debitis aliquid eveniet molestias iste?</p>
+                </div>
+            </section>  
+        </main>
+        <div class="container-fluid">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-5 border-top">
+                <div class="col-6 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <img src="imagenes/Img_Logo.png" class="bi estructura__pie__logo" alt="Logo chico">
+                    </a>
+                    <span class="text-muted">© 2021 todos los derechos reservados.</span>
+                </div>
+                <ul class="nav col-6 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted" href="https://facebook.com" target="_blank"><img src="imagenes/Img_Facebook.png" class="bi estructura__pie__redes__img" alt="Facebook"></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://linkedin.com" target="_blank"><img src="imagenes/Img_LinkedIn.png" class="bi estructura__pie__redes__img" alt="LinkedIn"></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://github.com"target="_blank"><img src="imagenes/Img_Github.png" class="bi estructura__pie__redes__img" alt="Git Hub"></a></li>
                 </ul>
-                <p>© 2021 todos los derechos reservados.</p>
             </footer>
-        </section>           
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>         
     </body>
 </html>
