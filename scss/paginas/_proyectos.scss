@@ -1,0 +1,18 @@
+.estructura__principal{ 
+    background-color: map-get($colores , fondo);
+    &__texto__proyectos{
+        padding: 5px;
+        text-align: left;
+    }
+}
+
+th{
+    background-color: map-get($colores , fondo);
+    color: black;
+    padding-left: 5px;
+}
+
+table, th, td {
+    border-bottom: 1px solid map-get($colores , bordes);
+    border-collapse: collapse;
+}

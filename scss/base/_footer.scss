@@ -1,0 +1,15 @@
+.estructura__pie{ 
+    background-color: #ff9f00;
+    &__logo{
+        width: 30px;
+        height: 30px;
+        filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(307deg) brightness(94%) contrast(102%);
+    }
+
+    &__redes__img{
+        width: 24px;
+    }
+}
+
+
+

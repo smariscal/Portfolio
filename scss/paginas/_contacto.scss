@@ -1,0 +1,122 @@
+.estructura__principal__texto__contacto{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.estructura__principal__texto__contacto__lbl{
+    text-align: left;
+}
+
+.estructura__principal__texto__contacto__botones {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.estructura__principal__texto__contacto__botones__check{
+    width: 100%;
+}
+
+input, textarea, select{
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 1px map-get($colores, primario );
+    padding: 0 10px;
+    &:focus{
+        border: solid 1px map-get($colores, bordes);
+    }
+}
+
+.check{
+    height: auto;
+    margin: 15px 15px 15px 10px;
+}
+
+textarea{
+    height: 6em;
+    &:focus{
+        border: solid 1px map-get($colores, bordes );
+    }
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+    & select {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px 15px;
+        outline: 0;
+        border: 1px solid map-get($colores, primario );
+        border-radius: 8px;
+        background: map-get($colores, fondo );
+        color: map-get($colores, bordes );
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    & select::-ms-expand {
+        display: none;
+    }
+    & select:hover, & select:focus {
+        color: map-get($colores, bordes );
+        background: map-get($colores, fondo );
+    }
+    & select:disabled {
+        opacity: 1;
+        pointer-events: none;
+    }
+    &_arrow {
+        position: absolute;
+        top: 5px;
+        right: 25px;
+        width: 10px;
+        height: 10px;
+        border: map-get($colores, primario );
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+
+    & select:hover ~ &_arrow,
+    & select:focus ~ &_arrow {
+        border-color: map-get($colores, bordes );
+    }
+    & select:disabled ~ &_arrow {
+        border-top-color: map-get($colores, primario );
+    }
+}    
+
+.btnEnter{
+    background-color: map-get($colores, primario );
+    color: map-get($colores, fondo );
+    font-weight: 700;
+    cursor: pointer;
+    &:hover{
+        background-color: map-get($colores, fondo );
+        color: map-get($colores, primario );
+        border: 1px solid map-get($colores, primario );
+    }
+}
+
+.btnBorrar{
+    background-color: map-get($colores, cancelar );
+    color: map-get($colores, fondo );
+    font-weight: 700;
+    border: 1px solid map-get($colores, cancelar );
+    cursor: pointer;
+    &:hover{
+        background-color: map-get($colores, fondo );
+        color: map-get($colores, cancelar );
+    }
+}
+

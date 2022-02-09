@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btnFlotante{
+    position: fixed;
+    right: 2%;
+    top: 20%;
+    filter: drop-shadow(10px 10px 4px #5f98d1);
+    &:hover{
+        animation: latido 0.5s ease-in-out infinite both;
+    }
+}

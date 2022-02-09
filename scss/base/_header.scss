@@ -1,0 +1,18 @@
+.estructura__cabecera{
+    background: rgb(255,159,0);
+    background: linear-gradient(0deg, rgba(255,159,0,1) 2%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 80%); 
+    &__contenedor__logo{
+        width: 100px;
+        margin: 10px;
+        &:hover {
+            animation: animacionLogo 0.9s both;
+        }
+    }
+    &__contenedor__texto{
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+}
+.nav-link {
+    font-weight: 700;
+}

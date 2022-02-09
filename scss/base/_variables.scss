@@ -1,0 +1,24 @@
+// Mapeo 
+$colores:(
+    primario: #ff9f00,
+    cancelar: #c82d2dad,
+    fondo: white,
+    bordes: black
+);
+
+// Extends
+%FlexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+// se llama
+// @include flexbox(var1, var2, var3,..., varn)
+@mixin flexbox($direction, $justify, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
