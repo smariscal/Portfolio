@@ -1,8 +1,6 @@
 .estructura__principal__texto__contacto{
     width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
+    @include flexbox(column, space-evenly, wrap, none);
 }
 
 .estructura__principal__texto__contacto__lbl{
@@ -10,14 +8,13 @@
 }
 
 .estructura__principal__texto__contacto__botones {
-    display: flex;
-    width: 100%;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    @include flexbox(row, space-evenly, wrap, none);
+    @extend %anchoTotal;
+
 }
 
 .estructura__principal__texto__contacto__botones__check{
-    width: 100%;
+    @extend %anchoTotal;
 }
 
 input, textarea, select{
@@ -47,10 +44,10 @@ textarea{
     position: relative;
     display: inline-block;
     margin-bottom: 15px;
-    width: 100%;
+    @extend %anchoTotal;
     & select {
         display: inline-block;
-        width: 100%;
+        @extend %anchoTotal;
         cursor: pointer;
         padding: 10px 15px;
         outline: 0;

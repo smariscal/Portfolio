@@ -1,6 +1,6 @@
 .estructura__principal{ 
     background-color: white;
     &__texto__cv{
-        width: 100%;
+        @extend %anchoTotal;
     }
 }

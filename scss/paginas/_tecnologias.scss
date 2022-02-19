@@ -1,11 +1,8 @@
 .estructura__principal{ 
     background-color: map-get($colores , fondo);
     &__texto__tecnologias{
-        display: flex;
-        flex-flow: row wrap;
-        width: 100%;
-        justify-content: space-evenly;
-        align-content: space-around;
+        @include flexbox(row, space-evenly, wrap, space-around);
+        @extend %anchoTotal;
         &__img{
             object-fit: fill;
             transition: transform 0.5s;
