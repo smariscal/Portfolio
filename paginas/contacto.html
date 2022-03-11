@@ -7,13 +7,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/7e715f76fd.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
             (function() {
                 emailjs.init('Tcv5SbJ158k233Fer');
             })();
         </script>
-        <script type="text/javascript">
+        <script>
             window.onload = function() {
                 document.getElementById('contact-form').addEventListener('submit', function(event) {
                     event.preventDefault();
@@ -92,8 +92,8 @@
                     <form id="contact-form" class="estructura__principal__texto__contacto">
                         <label class="estructura__principal__texto__contacto__lbl">Asunto</label>
                         <div class="select">
-                        <select name="asunto" id="asuntoContacto" for="asuntoContacto">
-                            <option value="** vacio **"></option>
+                        <select name="asunto" id="asuntoContacto">
+                            <option value="** vacio **">-</option>
                             <option value="trabajo">Trabajo</option>
                             <option value="información">información</option>
                             <option value="Otro motivo">Otro</option>
@@ -102,16 +102,16 @@
                         </div>
                         </div>
                         <label class="estructura__principal__texto__contacto__lbl">Nombre</label>
-                        <input type="text" for="nombreContacto" id="nombreContacto" name="nombre" placeholder="ej: Juan">
+                        <input type="text" id="nombreContacto" name="nombre" placeholder="ej: Juan">
                         <label class="estructura__principal__texto__contacto__lbl">Apellido</label>
-                        <input type="text" for="apellidoContacto" id="apellidoContacto" name="apellido" placeholder="ej: Perez">
+                        <input type="text" id="apellidoContacto" name="apellido" placeholder="ej: Perez">
                         <label class="estructura__principal__texto__contacto__lbl">Email</label>
-                        <input type="text" for="emailContacto" id="emailContacto" name="mailContacto" placeholder="ej: asd@mail.com">
+                        <input type="text" id="emailContacto" name="mailContacto" placeholder="ej: asd@mail.com">
                         <label class="estructura__principal__texto__contacto__lbl">Cuerpo</label>
-                        <textarea for="cuerpoContacto" id="cuerpoContacto" name="mensaje" placeholder="Escriba su mensaje aqui..."></textarea>
+                        <textarea id="cuerpoContacto" name="mensaje" placeholder="Escriba su mensaje aqui..."></textarea>
                         <div class="estructura__principal__texto__contacto__botones">
                             <div class="estructura__principal__texto__contacto__botones__check">
-                                <input type="checkbox" for="recibirinformacion" class="check"><label class="estructura__principal__texto__contacto__lbl check">¿Desea recibir información vía mail?</label>
+                                <input type="checkbox" class="check"><label class="estructura__principal__texto__contacto__lbl check">¿Desea recibir información vía mail?</label>
                             </div>
                             <input class="btnEnter" type="submit" value="Enviar">
                             <input class="btnBorrar" type="reset" value="Borrar">
@@ -131,7 +131,7 @@
                 <ul class="nav col-6 justify-content-end list-unstyled d-flex">
                     <li class="ms-3"><a class="text-muted" href="https://facebook.com" target="_blank"><img src="../imagenes/Img_Facebook.png" class="bi estructura__pie__redes__img" alt="Facebook"></a></li>
                     <li class="ms-3"><a class="text-muted" href="https://linkedin.com" target="_blank"><img src="../imagenes/Img_LinkedIn.png" class="bi estructura__pie__redes__img" alt="LinkedIn"></a></li>
-                    <li class="ms-3"><a class="text-muted" href="https://github.com"target="_blank"><img src="../imagenes/Img_Github.png" class="bi estructura__pie__redes__img" alt="Git Hub"></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://github.com" target="_blank"><img src="../imagenes/Img_Github.png" class="bi estructura__pie__redes__img" alt="Git Hub"></a></li>
                 </ul>
             </footer>
         </div>
