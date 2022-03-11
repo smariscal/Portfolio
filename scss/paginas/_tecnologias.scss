@@ -1,15 +1,10 @@
-.estructura__principal{ 
-    background-color: map-get($colores , fondo);
-    &__texto__tecnologias{
-        @include flexbox(row, space-evenly, wrap, space-around);
-        @extend %anchoTotal;
-        &__img{
-            object-fit: fill;
-            transition: transform 0.5s;
-            &:hover{
-                transform: scale(1.2);
-                z-index: 100;
-            }
-        }
-    }            
+.imgTecnologias{
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    transition: transform 0.5s;
+    &:hover{
+        transform: scale(1.2);
+        z-index: 100;
+    }
 }

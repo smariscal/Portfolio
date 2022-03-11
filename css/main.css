@@ -1,4 +1,4 @@
-.estructura__principal__texto__contacto__botones, .estructura__principal__texto__contacto__botones__check, .select, .select select, .estructura__principal__texto__cv, .estructura__principal__texto__tecnologias {
+.estructura__principal__texto__contacto__botones, .estructura__principal__texto__contacto__botones__check, .select, .select select, .estructura__principal__texto__cv {
   width: 100%; }
 
 @keyframes latido {
@@ -68,6 +68,9 @@ a {
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(307deg) brightness(94%) contrast(102%); }
   .estructura__pie__redes__img {
     width: 24px; }
+
+.imgPrincipal {
+  border-radius: 15%; }
 
 .estructura__principal__texto__contacto {
   width: 100%;
@@ -176,29 +179,14 @@ textarea {
     padding: 5px;
     text-align: left; }
 
-th {
-  background-color: white;
-  color: black;
-  padding-left: 5px; }
-
-table, th, td {
-  border-bottom: 1px solid black;
-  border-collapse: collapse; }
-
-.estructura__principal {
-  background-color: white; }
-  .estructura__principal__texto__tecnologias {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-around; }
-    .estructura__principal__texto__tecnologias__img {
-      object-fit: fill;
-      transition: transform 0.5s; }
-      .estructura__principal__texto__tecnologias__img:hover {
-        transform: scale(1.2);
-        z-index: 100; }
+.imgTecnologias {
+  width: 150px;
+  height: 150px;
+  object-fit: fill;
+  transition: transform 0.5s; }
+  .imgTecnologias:hover {
+    transform: scale(1.2);
+    z-index: 100; }
 
 @media only screen and (max-width: 750px) {
   h1 {
